@@ -1,0 +1,162 @@
+@import url(./fonts/fonts.css);
+
+
+
+.page {
+    background-color: #2A2C2F;
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+    width: 176px;
+    height: 52px;
+}
+
+.header__lang-link {
+    color: #FFFFFF;
+}
+
+.lead {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lead__title {
+    /* font-family: Inter; */
+    max-width: 720px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 100px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.lead__subtitle {
+    color: #FFFFFF;
+}
+
+.lead__image {
+    width: 984px;
+    height: 615px;
+}
+
+.lead__caption {
+    color: #FFFFFF;
+}
+
+.intro {
+    color: #FFFFFF;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.photo-grid__item {
+    width: 100%;
+    height: calc(0.75*width);
+}
+
+.places {}
+
+.places__place {
+    display: grid;
+    max-width: 1000px;
+    grid-template-columns: repeat ( 2, 1fr);
+    grid-template-rows: repeat (2, 1fr);
+    color: #FFFFFF;
+    grid-template-areas: "title website"
+    "image text";
+}
+
+.places__title {
+    grid-area: title;
+}
+
+.places__website {
+    grid-area: website;
+}
+
+.places__image {
+    width: 460px;
+    height: 460px;
+    grid-area: image;
+}
+
+.places__text {
+    grid-area: text;
+}
+
+.places__paragraph {
+    width: 484px;
+}
+
+.cover {
+    background-image: url('./images/cover-trains.jpg');
+    width: 1184px;
+    height: 740px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-size: cover;
+}
+
+.cover__title {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 76px;
+    text-align: center;
+    color: #FFFFFF;
+    position: absolute;
+    top: 250px;
+    z-index: 2;
+    width: 560px;
+}
+
+.cover__subtitle {
+    color: #FFFFFF;
+    width: 360px;
+    position: absolute;
+    top: 500px;
+    z-index: 2;
+}
+
+.cover::before {
+    background-color: #2A2C2F;
+    opacity: 0.2;
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.cover:hover::before {
+    opacity: .8;
+}
+
+.cover__link::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+}
