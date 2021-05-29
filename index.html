@@ -12,7 +12,7 @@
     <section class="header">
         <img class="header__logo" src="./images/header-logo.svg" alt="">
         <div class="header__lang-links">
-            <a class="header__lang-link" href="">Ru</a>
+            <a class="header__lang-link header__lang-link_active"  href="">Ru</a>
             <a class="header__lang-link" href="">En</a>
         </div>    
     </section>
@@ -25,8 +25,9 @@
     </section>
 
     <section class="intro">
-        <h2 class="intro__title">Чего мы там не видели?</h2>
-        <p>По опросам ВЦИОМ, 95% россиян мечтают куда-нибудь поехать, 
+        <div class="intro__container">
+            <h2 class="intro__title">Чего мы там не видели?</h2>
+        <p class="intro__text">По опросам ВЦИОМ, 95% россиян мечтают куда-нибудь поехать, 
             но только 36% планируют провести отпуск в родной стране. 
             Мол, чего мы тут, дома, не видели? На самом деле, 
             Россия — это целая вселенная с ласковым морем юга, 
@@ -38,13 +39,14 @@
             и проехала 20 тысяч километров по родной стране. 
             Мы выбрали и описали некоторые интересные места, 
             достойные вашего отпуска.</p>
-        <ul>
-            <li>Часовых поясов 11</li>
-            <li>Объектов природного наследия ЮНЕСКО 12</li>
-            <li>Объектов культурного наследия ЮНЕСКО 16</li>
-            <li>Природных заповедников 105</li>
-            <li>Аэропортов 241</li>
-        </ul>       
+        <ul class="intro__list">
+            <li>Часовых поясов <span class="intro__span">11</span></li>
+            <li>Объектов природного наследия ЮНЕСКО <span class="intro__span">12</span></li>
+            <li>Объектов культурного наследия ЮНЕСКО <span class="intro__span">16</span></li>
+            <li>Природных заповедников <span class="intro__span">105</span></li>
+            <li>Аэропортов <span class="intro__span">241</span></li>
+        </ul> 
+        </div>     
     </section>
 
     <section class="photo-grid">
@@ -164,11 +166,13 @@
     </section>
 
     <section class="footer">
-        <a class="footer__link" href="https://yandex.ru/maps" target="_blank">Карты</a>
-        <a class="footer__link" href="https://yandex.ru/pogodaм" target="_blank">Погода</a>
-        <a class="footer__link" href="https://rasp.yandex.ru" target="_blank">Расписание</a>
-        <a class="footer__link" href="https://calendar.yandex.ru" target="_blank">Календарь</a>
-        <a class="footer__link" href="https://travel.yandex.ru" target="_blank">Путешествия</a>
+        <nav class="navigation">
+            <a class="footer__link" href="https://yandex.ru/maps" target="_blank">Карты</a>
+            <a class="footer__link" href="https://yandex.ru/pogodaм" target="_blank">Погода</a>
+            <a class="footer__link" href="https://rasp.yandex.ru" target="_blank">Расписание</a>
+            <a class="footer__link" href="https://calendar.yandex.ru" target="_blank">Календарь</a>
+            <a class="footer__link" href="https://travel.yandex.ru" target="_blank">Путешествия</a>
+        </nav>
         <p class="footer__copyright">&copy;2021 Андрей Белюн</p>
     </section>
 
