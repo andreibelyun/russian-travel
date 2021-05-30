@@ -16,4 +16,4 @@
 
 **GitHub**
 
-* [Ссылка на проект в GitHub](https://andreibelyun.github.io/russian-travel/index.html)
+* [Ссылка проекта на GitHub Pages](https://andreibelyun.github.io/russian-travel/index.html)
