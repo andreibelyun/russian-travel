@@ -1,8 +1,6 @@
-.places__paragraph {
-    width: 100%;
-    font-family: Inter;
+.place__paragraph {
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 18px;
     line-height: 163%;
     color: #FFFFFF;
@@ -11,12 +9,12 @@
     margin-bottom: 26px;
 }
 
-.places__paragraph:last-of-type {
+.place__paragraph:last-of-type {
     margin-bottom: 0;
 }
 
 @media screen and (max-width: 1023px) {
-    .places__paragraph {
+    .place__paragraph {
         font-size: 16px;
         margin-bottom: 25px;
     }

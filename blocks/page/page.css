@@ -2,9 +2,5 @@
     background-color: #2A2C2F;
     font-family: 'Inter', 'Arial', sans-serif;
     -webkit-font-smoothing: antialiased;
-    margin: 0 auto;
-    width: 100%;
-    box-sizing: border-box;
-    max-width: 1280px;
-    min-width: 320px;
+    color: #fff;
 }
